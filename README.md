@@ -39,6 +39,17 @@ Slow **Content Transfer** can be caused by inefficient response body like sendin
 
 To measure HTTP timings in Node.js, we need to subscribe to a specific request, response and socket events. Here is a short code snippet how to do this in Node.js, this example focuses only to the timings:
 
+```javascript
+$ node index.js
+
+{ dnsLookup: 38.331211,
+  tcpConnection: 29.050202,
+  tlsHandshake: 65.220417,
+  firstByte: 230.939773,
+  contentTransfer: 1.197051,
+  total: 364.738654 }
+```
+
 ## Reference
 
 [Node.js Tutorials for Beginners](https://blog.risingstack.com/measuring-http-timings-node-js/)
